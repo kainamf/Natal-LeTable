@@ -37,14 +37,12 @@
         <div class="logo-text-group">
           <span class="logo-accent">Natal</span>
           <span class="logo-title">LeTable</span>
-          <span class="logo-subtitle">Experiências à Mesa</span>
         </div>
       </a>
 
       <nav class="desktop-nav">
         <a href="#apresentacao">Sobre</a>
-        <a href="#servicos">Nossos Serviços</a>
-        <a href="#catalogos">Catálogos</a>
+        <a href="#servicos">Serviços & Catálogos</a>
         <a href="#personalizar">Monte seu Natal</a>
         <a href="#trabalho">Bastidores</a>
         <a href="#faq">Dúvidas</a>
@@ -68,8 +66,7 @@
     <div class="mobile-drawer" id="mobileDrawer">
       <nav class="mobile-nav">
         <a href="#apresentacao" class="mobile-nav-link">Sobre</a>
-        <a href="#servicos" class="mobile-nav-link">Nossos Serviços</a>
-        <a href="#catalogos" class="mobile-nav-link">Catálogos</a>
+        <a href="#servicos" class="mobile-nav-link">Serviços & Catálogos</a>
         <a href="#personalizar" class="mobile-nav-link">Monte seu Natal</a>
         <a href="#trabalho" class="mobile-nav-link">Bastidores</a>
         <a href="#faq" class="mobile-nav-link">Dúvidas Frequentes</a>
@@ -97,7 +94,7 @@
 
           <p class="hero-description">
             Unimos beleza, praticidade e afeto para você celebrar sem preocupações.
-            Aluguel de louças sofisticadas, ambientação completa e um cardápio natalino exclusivo assinado pela nossa Chef.
+            Curadoria de louçaria nobre, ambientação completa e alta gastronomia natalina assinada pela nossa Chef.
           </p>
 
           <div class="hero-actions">
@@ -105,7 +102,7 @@
               <i class="fa-brands fa-whatsapp"></i>
               <span>Montar meu Pedido</span>
             </a>
-            <a href="#catalogos" class="btn btn-outline btn-lg">
+            <a href="#servicos" class="btn btn-outline btn-lg">
               <i class="fa-regular fa-bookmark"></i>
               <span>Ver Catálogos Online</span>
             </a>
@@ -170,15 +167,17 @@
           
           <!-- Serviço 1: Louças -->
           <div class="service-card">
-            <div class="service-badge">Essencial & Charmoso</div>
-            <div class="service-header">
+            <div class="service-card-top">
               <div class="service-icon">
                 <i class="fa-solid fa-champagne-glasses"></i>
               </div>
-              <h3 class="service-name">Aluguel de Louças e Itens Decorativos</h3>
+              <span class="service-badge">
+                <i class="fa-solid fa-sparkles"></i> Essencial & Charmoso
+              </span>
             </div>
+            <h3 class="service-name">Aluguel de Louças e Itens Decorativos</h3>
             <p class="service-desc">
-              Mesas harmônicas, elegantes e alinhadas ao estilo do seu evento. Pratos, taças de cristal, talheres nobres, sousplats e complementos temáticos natalinos impecáveis.
+              Mesas harmônicas, elegantes e alinhadas ao estilo do seu evento. Porcelanas finas, taças de cristal, talheres nobres e elementos decorativos de alta curadoria.
             </p>
             <ul class="service-perks">
               <li><i class="fa-solid fa-check"></i> Acervo exclusivo e curadoria refinada</li>
@@ -186,24 +185,23 @@
               <li><i class="fa-solid fa-check"></i> Praticidade: receba pronto para uso</li>
             </ul>
             <div class="service-actions">
-              <a href="https://www.canva.com/design/DAG60uTpQbA/HSsNwFQpLQTXiUne3W6Cpg/edit?utm_content=DAG60uTpQbA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
-                <i class="fa-regular fa-file-lines"></i> Abrir Catálogo de Louças
+              <a href="https://www.canva.com/design/DAG60uTpQbA/HSsNwFQpLQTXiUne3W6Cpg/edit?utm_content=DAG60uTpQbA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-block">
+                <i class="fa-regular fa-file-lines"></i> Ver Catálogo de Louças
               </a>
-              <button class="btn btn-gold btn-block" onclick="enviarWhatsAppServico('Aluguel de Louças e Itens Decorativos')">
-                <i class="fa-brands fa-whatsapp"></i> Reservar Louças
-              </button>
             </div>
           </div>
 
           <!-- Serviço 2: Decoração & Ambientação -->
           <div class="service-card featured">
-            <div class="service-badge highlight">Experiência Completa</div>
-            <div class="service-header">
+            <div class="service-card-top">
               <div class="service-icon">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
-              <h3 class="service-name">Projetos de Decoração & Ambientação</h3>
+              <span class="service-badge highlight">
+                <i class="fa-solid fa-crown"></i> Experiência Completa
+              </span>
             </div>
+            <h3 class="service-name">Projetos de Decoração & Ambientação</h3>
             <p class="service-desc">
               Mesa Posta, Ilha Gastronômica, Serviço Americano e cenografias que transformam residências, restaurantes e confraternizações em cenários acolhedores e memoráveis.
             </p>
@@ -213,106 +211,36 @@
               <li><i class="fa-solid fa-check"></i> Ideal para famílias ou confraternizações</li>
             </ul>
             <div class="service-actions">
-              <button class="btn btn-gold btn-block" onclick="enviarWhatsAppServico('Projetos de Decoração e Ambientação')">
-                <i class="fa-brands fa-whatsapp"></i> Solicitar Ambientação
-              </button>
-              <a href="#trabalho" class="btn btn-outline btn-block">
-                <i class="fa-brands fa-instagram"></i> Ver Fotos & Vídeos
+              <a href="#trabalho" class="btn btn-gold btn-block">
+                <i class="fa-brands fa-instagram"></i> Ver Fotos & Bastidores
               </a>
             </div>
           </div>
 
           <!-- Serviço 3: Ceia Completa -->
           <div class="service-card">
-            <div class="service-badge">Sabor & Praticidade</div>
-            <div class="service-header">
+            <div class="service-card-top">
               <div class="service-icon">
                 <i class="fa-solid fa-utensils"></i>
               </div>
-              <h3 class="service-name">Ceia Completa para seu Final de Ano</h3>
+              <span class="service-badge">
+                <i class="fa-solid fa-star"></i> Sabor & Praticidade
+              </span>
             </div>
+            <h3 class="service-name">Ceia Completa para seu Final de Ano</h3>
             <p class="service-desc">
               Cardápio especial assinado pela nossa Chef, pensado para quem deseja praticidade total, receitas sofisticadas e apresentação digna de alta gastronomia.
             </p>
             <ul class="service-perks">
               <li><i class="fa-solid fa-check"></i> Entradas, pratos principais e sobremesas</li>
-              <li><i class="fa-solid fa-check"></i> Ingredientes frescos e preparo artesanal</li>
+              <li><i class="fa-solid fa-check"></i> Ingredientes nobres e preparo de alta gastronomia</li>
               <li><i class="fa-solid fa-check"></i> Pratos entregues prontos para servir</li>
             </ul>
             <div class="service-actions">
-              <a href="https://www.canva.com/design/DAG60uWG7Hc/GDWCyMrhBxBrs_vX3MKomg/edit?utm_content=DAG60uWG7Hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block">
-                <i class="fa-regular fa-file-lines"></i> Abrir Cardápio da Ceia
+              <a href="https://www.canva.com/design/DAG60uWG7Hc/GDWCyMrhBxBrs_vX3MKomg/edit?utm_content=DAG60uWG7Hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-block">
+                <i class="fa-regular fa-file-lines"></i> Ver Cardápio da Ceia
               </a>
-              <button class="btn btn-gold btn-block" onclick="enviarWhatsAppServico('Ceia Completa de Final de Ano')">
-                <i class="fa-brands fa-whatsapp"></i> Encomendar Ceia
-              </button>
             </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Acesso Rápido aos Catálogos Canva & PDF -->
-    <section class="catalogs-section" id="catalogos">
-      <div class="container">
-        <div class="catalogs-box">
-          <div class="catalogs-header text-center">
-            <span class="section-tag">Acesse os Materiais Oficiais</span>
-            <h2 class="section-title">Explore nossos Catálogos Digitais</h2>
-            <p class="section-subtitle">
-              Conheça as opções detalhadas, fotos das peças e o cardápio completo da nossa Chef.
-            </p>
-          </div>
-
-          <div class="catalogs-grid">
-            <!-- Card Aluguel de Louças -->
-            <div class="catalog-item">
-              <div class="catalog-thumb thumb-loucas">
-                <div class="catalog-thumb-overlay">
-                  <i class="fa-solid fa-book-open"></i>
-                </div>
-              </div>
-              <div class="catalog-info">
-                <div class="catalog-type">📘 Catálogo Digital</div>
-                <h3>Aluguel de Louças & Itens Decorativos</h3>
-                <p>Sousplats, taças, pratos de porcelana, talheres em dourado/prata e guardanapos natalinos.</p>
-                <a href="https://www.canva.com/design/DAG60uTpQbA/HSsNwFQpLQTXiUne3W6Cpg/edit?utm_content=DAG60uTpQbA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm w-100">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Catálogo no Canva
-                </a>
-              </div>
-            </div>
-
-            <!-- Card Cardápio Ceia -->
-            <div class="catalog-item">
-              <div class="catalog-thumb thumb-ceia">
-                <div class="catalog-thumb-overlay">
-                  <i class="fa-solid fa-utensils"></i>
-                </div>
-              </div>
-              <div class="catalog-info">
-                <div class="catalog-type">🍽️ Cardápio Especial</div>
-                <h3>Ceia de Final de Ano da Chef</h3>
-                <p>Assados tradicionais, guarnições sofisticadas, saladas festivas e sobremesas que encantam.</p>
-                <a href="https://www.canva.com/design/DAG60uWG7Hc/GDWCyMrhBxBrs_vX3MKomg/edit?utm_content=DAG60uWG7Hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm w-100">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Cardápio no Canva
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Banner PDF Sob Demanda -->
-          <div class="pdf-callout">
-            <div class="pdf-icon">
-              <i class="fa-solid fa-file-pdf"></i>
-            </div>
-            <div class="pdf-content">
-              <h4>Prefere receber os catálogos diretamente em PDF?</h4>
-              <p>É só nos chamar no WhatsApp — enviamos os arquivos no mesmo instante para você ver com tranquilidade.</p>
-            </div>
-            <button class="btn btn-outline-light" onclick="solicitarPDF()">
-              <i class="fa-brands fa-whatsapp"></i> Pedir Catálogos em PDF
-            </button>
           </div>
 
         </div>
@@ -344,7 +272,7 @@
                     <span class="custom-check"><i class="fa-solid fa-check"></i></span>
                     <div class="check-info">
                       <strong>Aluguel de Louças</strong>
-                      <span>Taças, pratos, sousplats e talheres</span>
+                      <span>Porcelanas finas, cristais e faqueiros nobres</span>
                     </div>
                   </div>
                 </label>
@@ -385,15 +313,16 @@
 
               <div class="form-field">
                 <label for="eventDate">Para qual data?</label>
-                <div class="input-wrapper">
-                  <i class="fa-regular fa-calendar"></i>
-                  <select id="eventDate" onchange="atualizarMensagemPreview()">
+                <div class="input-wrapper custom-select-wrapper">
+                  <i class="fa-regular fa-calendar input-icon-left"></i>
+                  <select id="eventDate" class="custom-select" onchange="atualizarMensagemPreview()">
                     <option value="Noite de Natal (24/12)">Noite de Natal (24/12)</option>
                     <option value="Almoço de Natal (25/12)">Almoço de Natal (25/12)</option>
                     <option value="Confraternização Pré-Natal (Dezembro)">Confraternização Pré-Natal (Dezembro)</option>
                     <option value="Réveillon / Ano Novo (31/12)">Réveillon / Ano Novo (31/12)</option>
                     <option value="Outra data">Outra data em Dezembro</option>
                   </select>
+                  <i class="fa-solid fa-chevron-down select-chevron"></i>
                 </div>
               </div>
 
@@ -506,7 +435,7 @@
             </button>
             <div class="faq-answer">
               <p>
-                A ceia é preparada artesanalmente nas horas que antecedem a sua celebração para garantir frescor absoluto. Os pratos são entregues prontos para servir em travessas e embalagens adequadas para aquecimento rápido, com instruções detalhadas da Chef sobre temperatura e montagem à mesa.
+                A ceia é elaborada sob rigorosos padrões de alta gastronomia nas horas que antecedem a sua celebração, garantindo frescor e sabor impecáveis. Os pratos são finalizados e entregues prontos para servir em travessas e embalagens adequadas para aquecimento rápido, acompanhados de orientações exclusivas da Chef para a apresentação à mesa.
               </p>
             </div>
           </div>
@@ -519,7 +448,7 @@
             </button>
             <div class="faq-answer">
               <p>
-                Sim! Você tem total liberdade. Se você já tem sua própria ceia e precisa apenas de louças sofisticadas e sousplats, atendemos perfeitamente. Da mesma forma, se já possui suas louças e quer apenas o cardápio da Chef, cuidamos exclusivamente da parte gastronômica.
+                Sim! Você tem total liberdade. Se você já planejou sua ceia e busca apenas o nosso acervo nobre de louças e ambientação, atendemos com total dedicação. Da mesma forma, se já possui sua mesa montada e deseja apenas a experiência gastronômica da nossa Chef, cuidamos exclusivamente do cardápio.
               </p>
             </div>
           </div>
@@ -545,7 +474,7 @@
             </button>
             <div class="faq-answer">
               <p>
-                Por prezarmos por um atendimento acolhedor e artesanal de altíssima qualidade, temos um número estritamente limitado de vagas para os dias 24/12 e 25/12. Recomendamos fechar o seu pedido com o máximo de antecedência possível, pois as datas costumam se esgotar semanas antes do Natal.
+                Para assegurar um padrão impecável e uma experiência exclusiva em cada evento, trabalhamos com um número estritamente limitado de reservas para os dias 24/12 e 25/12. Recomendamos confirmar sua data com a máxima antecedência, pois as vagas encerram assim que atingimos nossa capacidade de atendimento.
               </p>
             </div>
           </div>
@@ -566,10 +495,7 @@
         </div>
 
         <div class="faq-footer text-center">
-          <p>Ainda tem alguma dúvida específica sobre o seu evento?</p>
-          <button class="btn btn-gold btn-sm" onclick="falarComAtendente()">
-            <i class="fa-brands fa-whatsapp"></i> Tirar Dúvida no WhatsApp
-          </button>
+          <p>Ainda tem alguma dúvida específica sobre o seu evento? Fale com nossa equipe pelo botão de atendimento no canto da tela.</p>
         </div>
       </div>
     </section>
@@ -581,7 +507,7 @@
         <p class="closing-subtitle">Estamos prontos para cuidar de cada detalhe para você e sua família. ✨</p>
         <div class="closing-actions">
           <a href="#personalizar" class="btn btn-gold btn-lg btn-pulse">
-            <i class="fa-brands fa-whatsapp"></i> Falar com a LeTable Agora
+            <i class="fa-solid fa-sparkles"></i> Montar meu Pedido de Natal
           </a>
         </div>
       </div>
@@ -625,17 +551,13 @@
         <ul>
           <li><a href="https://www.canva.com/design/DAG60uTpQbA/HSsNwFQpLQTXiUne3W6Cpg/edit?utm_content=DAG60uTpQbA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">Catálogo de Louças (Canva)</a></li>
           <li><a href="https://www.canva.com/design/DAG60uWG7Hc/GDWCyMrhBxBrs_vX3MKomg/edit?utm_content=DAG60uWG7Hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">Cardápio da Ceia (Canva)</a></li>
-          <li><button onclick="solicitarPDF()" class="link-button">Solicitar Catálogos em PDF</button></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Atendimento</h4>
         <p><i class="fa-regular fa-clock"></i> Segunda a Sábado, das 09h às 19h</p>
-        <p><i class="fa-solid fa-location-dot"></i> Atendimento sob reserva para o Natal</p>
-        <button class="btn btn-gold btn-sm w-100 mt-2" onclick="falarComAtendente()">
-          <i class="fa-brands fa-whatsapp"></i> Iniciar Atendimento
-        </button>
+        <p><i class="fa-brands fa-whatsapp"></i> Atendimento exclusivo sob reserva</p>
       </div>
     </div>
 

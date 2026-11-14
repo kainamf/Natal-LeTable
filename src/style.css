@@ -165,11 +165,10 @@ button {
 
 .logo-title {
   font-family: var(--font-serif);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-primary);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .logo-subtitle {
@@ -388,9 +387,9 @@ section {
    ============================================================ */
 .hero-section {
   padding: 100px 0 80px 0;
-  background: radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.12) 0%, transparent 60%),
-              linear-gradient(180deg, #F7F3EC 0%, #FAF8F5 100%);
-  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.08) 0%, transparent 60%),
+              linear-gradient(180deg, #F6F2EA 0%, #FAF8F5 100%);
+  border-bottom: none;
   overflow: hidden;
 }
 
@@ -500,8 +499,8 @@ section {
    APRESENTAÇÃO / MENSAGEM EMOCIONAL
    ============================================================ */
 .intro-section {
-  background-color: var(--color-bg-light);
-  padding: 60px 0;
+  background: linear-gradient(180deg, #FAF8F5 0%, #F6F2EA 100%);
+  padding: 70px 0;
 }
 
 .intro-card {
@@ -561,7 +560,7 @@ section {
    SERVIÇOS / 3 PILARES
    ============================================================ */
 .services-section {
-  background-color: #F6F3EE;
+  background: linear-gradient(180deg, #F6F2EA 0%, #FAF8F5 100%);
 }
 
 .services-grid {
@@ -573,7 +572,7 @@ section {
 .service-card {
   background: #FFFFFF;
   border-radius: var(--radius-md);
-  padding: 40px 30px;
+  padding: 36px 28px;
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -593,48 +592,66 @@ section {
   background: radial-gradient(circle at 90% 10%, rgba(197, 160, 89, 0.08) 0%, #FFFFFF 80%);
 }
 
-.service-badge {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
-  background-color: #F1ECE3;
-  color: var(--color-primary);
-}
-
-.service-badge.highlight {
-  background-color: var(--color-wine);
-  color: #FFFFFF;
-}
-
-.service-header {
+.service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
 .service-icon {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   border-radius: 14px;
   background-color: rgba(197, 160, 89, 0.15);
   color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 16px;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.service-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background-color: #F1ECE3;
+  color: var(--color-primary);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  white-space: nowrap;
+}
+
+.service-badge i {
+  color: var(--color-gold);
+  font-size: 0.72rem;
+}
+
+.service-badge.highlight {
+  background-color: var(--color-wine);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-badge.highlight i {
+  color: var(--color-gold-light);
 }
 
 .service-name {
   font-family: var(--font-serif);
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.3;
+  margin-bottom: 12px;
 }
 
 .service-desc {
@@ -815,8 +832,7 @@ section {
    MONTE SEU NATAL (BUILDER INTERATIVO DE WHATSAPP)
    ============================================================ */
 .builder-section {
-  background: radial-gradient(circle at 20% 80%, rgba(12, 35, 24, 0.04) 0%, transparent 60%),
-              #FAF6F0;
+  background: linear-gradient(180deg, #FAF8F5 0%, #F6F1E7 100%);
 }
 
 .builder-card {
@@ -948,8 +964,7 @@ section {
   pointer-events: none;
 }
 
-.input-wrapper input,
-.input-wrapper select {
+.input-wrapper input {
   width: 100%;
   padding: 13px 14px 13px 40px;
   border: 1.5px solid var(--color-border);
@@ -961,12 +976,67 @@ section {
   transition: var(--transition);
 }
 
-.input-wrapper input:focus,
-.input-wrapper select:focus {
+.input-wrapper input:focus {
   outline: none;
   border-color: var(--color-gold);
   background-color: #FFFFFF;
   box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15);
+}
+
+/* Custom Select Date */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 13px 38px 13px 40px !important;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: #FAF8F5;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.custom-select:hover {
+  border-color: var(--color-gold);
+  background-color: #FFFFFF;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15);
+}
+
+.select-chevron {
+  position: absolute;
+  right: 14px;
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.custom-select-wrapper:hover .select-chevron {
+  color: var(--color-gold-hover);
+  transform: translateY(1px);
+}
+
+.custom-select option {
+  background-color: #FFFFFF;
+  color: var(--color-text-dark);
+  padding: 12px;
 }
 
 /* Preview da Mensagem */
@@ -1022,7 +1092,7 @@ section {
    CONHEÇA MAIS DO NOSSO TRABALHO / INSTAGRAM
    ============================================================ */
 .portfolio-section {
-  background-color: var(--color-bg-light);
+  background: linear-gradient(180deg, #F6F1E7 0%, #FAF8F5 100%);
 }
 
 .portfolio-card {
@@ -1147,7 +1217,7 @@ section {
    FAQ - PERGUNTAS FREQUENTES (ACCORDION)
    ============================================================ */
 .faq-section {
-  background-color: #F8F5EE;
+  background: linear-gradient(180deg, #FAF8F5 0%, #F5ECE0 100%);
 }
 
 .faq-accordion {
@@ -1230,11 +1300,11 @@ section {
    BANNER DE FECHAMENTO (CTA FINAL)
    ============================================================ */
 .cta-closing-section {
-  background: radial-gradient(circle at center, var(--color-wine) 0%, var(--color-wine-dark) 100%);
+  background: linear-gradient(180deg, #4A0E17 0%, #2A080E 55%, #0C2318 100%);
   color: #FFFFFF;
-  padding: 90px 0;
-  border-top: 1px solid var(--color-gold);
-  border-bottom: 1px solid var(--color-gold);
+  padding: 100px 0 90px 0;
+  border-top: 1px solid var(--color-border-gold);
+  border-bottom: none;
 }
 
 .closing-title {
@@ -1255,9 +1325,10 @@ section {
    RODAPÉ
    ============================================================ */
 .site-footer {
-  background-color: var(--color-primary);
+  background-color: #0C2318;
   color: var(--color-text-light);
-  padding-top: 70px;
+  padding-top: 50px;
+  border-top: none;
 }
 
 .footer-container {
