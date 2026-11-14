@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7CFA0"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#8E6A2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#0C2318"/>
+  <!-- Christmas tree / star shape in gold -->
+  <polygon points="50,15 54,26 65,26 56,33 60,44 50,37 40,44 44,33 35,26 46,26" fill="url(#gold)"/>
+  <polygon points="50,34 68,54 58,54 74,74 26,74 42,54 32,54" fill="url(#gold)"/>
+  <rect x="46" y="74" width="8" height="12" rx="2" fill="#C5A059"/>
+</svg>
