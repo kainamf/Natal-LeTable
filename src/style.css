@@ -507,45 +507,91 @@ section {
   background: #FFFFFF;
   border: 1px solid var(--color-border-gold);
   border-radius: var(--radius-lg);
-  padding: 50px 60px;
-  max-width: 900px;
+  padding: 40px;
+  max-width: 1080px;
   margin: 0 auto;
-  text-align: center;
   box-shadow: var(--shadow-md);
   position: relative;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-.intro-icon {
-  width: 50px;
-  height: 50px;
-  margin: -75px auto 20px auto;
-  background: var(--color-wine);
-  color: var(--color-gold-light);
-  border-radius: 50%;
+.intro-media {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  box-shadow: 0 6px 16px rgba(74, 14, 23, 0.25);
-  border: 2px solid #FFFFFF;
+}
+
+.intro-media-frame {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1.5px solid var(--color-border-gold);
+  background: #FAF8F5;
+}
+
+.intro-catalog-img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.intro-media-frame:hover .intro-catalog-img {
+  transform: scale(1.02);
+}
+
+.catalog-floating-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(12, 35, 24, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.intro-body {
+  text-align: left;
+}
+
+.intro-body .section-tag {
+  margin-bottom: 6px;
 }
 
 .intro-title {
   font-family: var(--font-serif);
   font-size: 2.1rem;
   color: var(--color-primary);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  line-height: 1.25;
 }
 
 .intro-text p {
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.75;
   color: var(--color-text-dark);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .intro-text p:last-child {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .intro-signature {
@@ -554,6 +600,10 @@ section {
   font-size: 1.35rem;
   color: var(--color-gold-hover);
   letter-spacing: 0.5px;
+}
+
+.intro-actions {
+  margin-top: 24px;
 }
 
 /* ============================================================
@@ -1307,18 +1357,131 @@ section {
   border-bottom: none;
 }
 
-.closing-title {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
-  line-height: 1.3;
-  max-width: 800px;
-  margin: 0 auto 16px auto;
+.closing-card-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.closing-subtitle {
-  font-size: 1.25rem;
+.closing-image-card {
+  display: flex;
+  justify-content: center;
+}
+
+.closing-image-frame {
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
+  background: #1A1A1A;
+}
+
+.closing-official-img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.closing-image-frame:hover .closing-official-img {
+  transform: scale(1.02);
+}
+
+.closing-info-box {
+  text-align: left;
+}
+
+.closing-tag {
   color: var(--color-gold-light);
-  margin-bottom: 36px;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.closing-info-box .closing-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.closing-info-box .closing-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-gold-light);
+  margin-bottom: 28px;
+}
+
+.closing-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.contact-pill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  color: #FFFFFF;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+.contact-pill-item:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--color-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.pill-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.whatsapp-bg {
+  background: #25D366;
+  color: #FFFFFF;
+}
+
+.insta-bg {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+  color: #FFFFFF;
+}
+
+.pill-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.pill-text span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--color-gold-light);
+}
+
+.pill-text strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 /* ============================================================
@@ -1512,6 +1675,39 @@ section {
    RESPONSIVIDADE (MOBILE & TABLET)
    ============================================================ */
 @media (max-width: 992px) {
+  .intro-card {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .intro-body {
+    text-align: center;
+  }
+
+  .intro-media-frame {
+    max-width: 380px;
+  }
+
+  .closing-card-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .closing-info-box {
+    text-align: center;
+  }
+
+  .closing-contacts {
+    align-items: center;
+  }
+
+  .contact-pill-item {
+    width: auto;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
     max-width: 550px;
@@ -1563,21 +1759,23 @@ section {
   }
 
   .intro-card {
-    padding: 40px 20px;
+    padding: 24px 16px;
   }
 
   .intro-title {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+  }
+
+  .closing-info-box .closing-title {
+    font-size: 1.8rem;
+  }
+
+  .closing-image-frame {
+    max-width: 320px;
   }
 
   .builder-card {
     padding: 30px 20px;
-  }
-
-  .pdf-callout {
-    flex-direction: column;
-    text-align: center;
-    padding: 24px;
   }
 
   .footer-container {
